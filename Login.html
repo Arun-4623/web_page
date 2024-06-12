@@ -1,0 +1,44 @@
+<html>
+    <head><link rel="stylesheet" type="text/css" href="Assi4.css"></head>
+    <body>
+        <header><img src="images.png" alt="pet" width="100" height="75">
+            <nav>
+            
+                <div class="menu-item"><a href="Assi4.html" target="_self"> Home</a></div>
+                <div class="menu-item"><a href="Login.html" target="_blank">Login</a></div>
+                <div class="menu-item"><a href="Registeration.html" target="_blank">Reg</a></div>
+                <div class="menu-item"><a href="home.html" target="_self">Buy pets</a> </div>
+            </nav> 
+        </header>
+        <table>
+        <tr>
+            <td><h2>Login</h2></td>
+        </tr>
+        
+        <tr>
+            <td><label>username</label></td>
+            <td><input type="text" name="firstname" id="fn"></td>
+        </tr>
+        <tr>
+            <td><label>password</label></td>
+            <td><input type="password" name="pswd" id="sn"></td>
+        </tr>
+        <tr>
+            <td><button type="button" onclick="stringAdd()">Login</button></td>
+        </tr>
+        </table>
+        <script>
+            function stringAdd(){
+                var firstNo=document.getElementById("fn").value;
+                var secondNo=document.getElementById("sn").value;
+                var sum=firstNo+secondNo;
+                document.getElementById("output").innerHTML=sum;
+            }
+        </script>
+        
+        <p id="output"></p>
+        <footer>
+            <p>This page is developed by arun  </p>
+        </footer>
+    </body>
+</html>
